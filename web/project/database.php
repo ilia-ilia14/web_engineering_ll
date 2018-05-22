@@ -16,7 +16,8 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
 
         echo "database connection error ".$dsn;
-        //$error_message = $e->getMessage();
+        $error_message = $e->getMessage();
+		echo $error_message;
         //include('../errors/database_error.php');
         exit();
     }
