@@ -22,9 +22,9 @@ function getProducts()
               $statment = $db->prepare($query);
               $statment->execute();
               $products = $statement->fetchAll();
-              $statment->closeCursor();
-			  $arr = $statement->errorInfo();
-			  var_dump($arr);
+             // $statment->closeCursor();
+			 // $arr = $statement->errorInfo();
+			 // var_dump($arr);
               //return $products;
 
               
