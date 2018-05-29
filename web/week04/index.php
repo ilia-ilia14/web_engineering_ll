@@ -12,11 +12,10 @@ if(!isset($_SESSION))
 $action = filter_input(INPUT_GET, 'action');  
 if ($action == NULL) {
     $products = getProducts();
-	var_dump($products);
-   // include 'home.php';
+    include 'home.php';
 
 }
-/*
+
 //cart start at the beggingin of the session
 
 if($action == "product") {
@@ -50,5 +49,4 @@ if($action == "order"){
 }
 if($action == "confirm") {  include "confirm.php"; }
 
-*/
 ?>
