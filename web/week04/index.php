@@ -15,13 +15,15 @@ if ($action == NULL) {
     include 'products.php';
 
 }
-/*
+
 //cart start at the beggingin of the session
 
-if($action == "product") {
+if($action == "viewProduct") {
+	$id = filter_input(INPUT_GET, 'id');
 	$product = getProduct($id)
 	include "product.php";
 }
+/*
 if($action == "add") {
 	$name = filter_input(INPUT_GET, 'name');
 	$price = filter_input(INPUT_GET, 'price');
