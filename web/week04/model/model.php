@@ -17,6 +17,7 @@ function getProduct($id)
 
 function getProducts()
 {
+	/*
 	global $db;
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
@@ -24,6 +25,8 @@ function getProducts()
               $products = $statement->fetchAll();
               $statment->closeCursor();
               return $products;
+			  */
+			  echo "here";
               
 }
 function search($keyword)
