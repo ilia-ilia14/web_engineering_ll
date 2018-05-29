@@ -7,16 +7,15 @@ if(!isset($_SESSION))
 	    if(!isset($_SESSION['Cart']))
         {  $_SESSION['Cart'] = array(); }
 	require('model/model.php');
-	echo "works";
 }
-/*
+
 $action = filter_input(INPUT_GET, 'action');  
 if ($action == NULL) {
-    $categories = get_categories();
+    $products = getProducts();
     include 'home.php';
 
 }
-
+/*
 //cart start at the beggingin of the session
 
 if($action == "product") {
