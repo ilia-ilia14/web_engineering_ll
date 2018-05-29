@@ -22,9 +22,9 @@ function getProducts()
 	
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
-			  	var_dump($db);
+			  $statment->execute();
 			  /*
-              $statment->execute();
+              
               $products = $statement->fetchAll();
              // $statment->closeCursor();
 			 // $arr = $statement->errorInfo();
