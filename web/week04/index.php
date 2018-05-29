@@ -20,7 +20,7 @@ if ($action == NULL) {
 
 if($action == "viewProduct") {
 	$id = filter_input(INPUT_GET, 'id');
-	$product = getProduct($id)
+	$product = getProduct($id);
 	include "product.php";
 }
 /*
