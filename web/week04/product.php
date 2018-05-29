@@ -20,12 +20,12 @@ if(!isset($_SESSION))
                 </div>
                 <div class="col-xs-5" style="border:0px solid gray">
                     <!-- Datos del vendedor y titulo del producto -->
-                    <h3><?php echo $name; ?></h3>    
+                    <h3><?php echo $product['name']; ?></h3>    
                     <h5 style="color:#337ab7">Rank <a href="#"><?php echo $name; ?></a> · <small style="color:#337ab7">(5054 ventas)</small></h5>
         
                     <!-- Precios -->
                     <h6 class="title-price"><small>Price/small</h6>
-                    <h3 style="margin-top:0px;">$<?php echo $price; ?></h3>
+                    <h3 style="margin-top:0px;">$<?php echo $product['price']; ?></h3>
                       
         
                     <!-- Botones de compra -->
@@ -42,7 +42,7 @@ if(!isset($_SESSION))
                     <div style="width:100%;border-top:1px solid silver">
                         <p style="padding:15px;">
                             <small>
-							<?php echo $description; ?>
+							<?php echo $product['description']; ?>
                             </small>
                         </p>
                         <small>
