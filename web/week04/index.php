@@ -15,7 +15,7 @@ if ($action == NULL) {
     include 'home.php';
 
 }
-
+/*
 //cart start at the beggingin of the session
 
 if($action == "product") {
@@ -49,4 +49,5 @@ if($action == "order"){
 }
 if($action == "confirm") {  include "confirm.php"; }
 
+*/
 ?>
