@@ -17,16 +17,16 @@ function getProduct($id)
 
 function getProducts()
 {
-	/*
 	global $db;
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
               $statment->execute();
               $products = $statement->fetchAll();
               $statment->closeCursor();
-              return $products;
-			  */
-			  echo "here";
+			  $arr = $statement->errorInfo();
+			  var_dump($arr);
+              //return $products;
+
               
 }
 function search($keyword)
