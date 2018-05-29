@@ -21,7 +21,7 @@ if(!isset($_SESSION))
                 <div class="col-xs-5" style="border:0px solid gray">
                     <!-- Datos del vendedor y titulo del producto -->
                     <h3><?php echo $product['name']; ?></h3>    
-                    <h5 style="color:#337ab7">Rank <a href="#"><?php echo $name; ?></a> · <small style="color:#337ab7">(5054 ventas)</small></h5>
+                    <h5 style="color:#337ab7">Rank <a href="#"><small style="color:#337ab7">(5054 ventas)</small></h5>
         
                     <!-- Precios -->
                     <h6 class="title-price"><small>Price/small</h6>
