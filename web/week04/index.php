@@ -45,7 +45,7 @@ if($action == "delete") {
 	
 	session_destroy();
 	    $products = getProducts();
-    include 'products.php';
+    include 'index.php';
 }
 if($action == "order"){
 	$total = filter_input(INPUT_GET, 'total');
