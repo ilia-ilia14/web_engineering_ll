@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 	
 	    if(!isset($_SESSION['Cart']))
         {  $_SESSION['Cart'] = array(); }
-	require('model/model.php');
+	//require('model/model.php');
 }
 $action = filter_input(INPUT_POST, 'action');
 if($action == NULL)
