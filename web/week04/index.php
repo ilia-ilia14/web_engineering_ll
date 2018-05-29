@@ -6,8 +6,10 @@ if(!isset($_SESSION))
 	
 	    if(!isset($_SESSION['Cart']))
         {  $_SESSION['Cart'] = array(); }
-	//require('model/model.php');
+	require('model/model.php');
+	echo "works";
 }
+/*
 $action = filter_input(INPUT_GET, 'action');  
 if ($action == NULL) {
     $categories = get_categories();
@@ -48,5 +50,5 @@ if($action == "order"){
 }
 if($action == "confirm") {  include "confirm.php"; }
 
-
+*/
 ?>
