@@ -23,6 +23,7 @@ function getProducts()
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
 			  $statment->execute();
+			  $products = $statement->fetchAll();
 			  /*
               
               $products = $statement->fetchAll();
