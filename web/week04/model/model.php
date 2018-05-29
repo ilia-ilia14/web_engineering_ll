@@ -18,6 +18,8 @@ function getProduct($id)
 function getProducts()
 {
 	global $db;
+	var_dump($db);
+	/*
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
               $statment->execute();
@@ -26,12 +28,19 @@ function getProducts()
 			 // $arr = $statement->errorInfo();
 			 // var_dump($arr);
               //return $products;
-
+			  */
+	/*		  
+$stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':name', $name, PDO::PARAM_STR);
+$stmt->execute();
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+*/
               
 }
 function search($keyword)
 {
-  
+  //git push heroku master
 }
 
 ?>
