@@ -6,17 +6,24 @@ if(!isset($_SESSION))
 	
 	    if(!isset($_SESSION['Cart']))
         {  $_SESSION['Cart'] = array(); }
+	require('model/model.php');
+}
+$action = filter_input(INPUT_POST, 'action');
+if($action == NULL)
+{
+$action = filter_input(INPUT_GET, 'action');
 }
 
-$action = filter_input(INPUT_GET, 'action');  
+if ($action == NULL) {
+    $categories = get_categories();
+    include 'home.php';
+
+}$action = filter_input(INPUT_GET, 'action');  
 
 //cart start at the beggingin of the session
 
 if($action == "product") {
-	$name = filter_input(INPUT_GET, 'name');
-	$description =  filter_input(INPUT_GET, 'description');
-	$price = filter_input(INPUT_GET, 'price');
-	$picture = filter_input(INPUT_GET, 'pic');
+	$product = getProduct($id)
 	include "product.php";
 }
 if($action == "add") {
