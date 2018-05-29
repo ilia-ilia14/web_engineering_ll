@@ -30,7 +30,7 @@ if(!isset($_SESSION))
         
                     <!-- Botones de compra -->
                     <div class="section" style="padding-bottom:20px;">
-                        <a href="control.php?action=add&name=<?php echo $name."&price=".$price."&picture=".$picture."&description=".$description; ?>"
+                        <a href="control.php?action=add&name=<?php echo $product['name']."&price=".$product['price']."&picture=".$product['picture']."&description=".$product['description']; ?>"
 						class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a>
                         <h6><a href="#" >
 						<span class="glyphicon glyphicon-heart-empty" style="cursor:pointer;">

@@ -23,7 +23,7 @@ if($action == "viewProduct") {
 	$product = getProduct($id);
 	include "product.php";
 }
-/*
+
 if($action == "add") {
 	$name = filter_input(INPUT_GET, 'name');
 	$price = filter_input(INPUT_GET, 'price');
@@ -51,5 +51,4 @@ if($action == "order"){
 }
 if($action == "confirm") {  include "confirm.php"; }
 
-*/
 ?>
