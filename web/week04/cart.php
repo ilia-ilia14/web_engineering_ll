@@ -22,7 +22,7 @@ if(!isset($_SESSION))
 
 
 <h2> Your Shopping Cart</h2>
-<h4 style="text-align:right; "><a href="products.php"> HOME PAGE </a></h4>
+<h4 style="text-align:right; "><a href="index.php"> HOME PAGE </a></h4>
 <main>
  <!--loop goies here -->
 <div class="error-pages">
