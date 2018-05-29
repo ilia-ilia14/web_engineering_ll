@@ -19,6 +19,7 @@ if(!isset($_SESSION))
 
 
  <?php   foreach ($products as $product) : ?>
+ <?php var_dump($product); ?>
 <div class="col-xs-12 col-md-6">
 	<!-- First product box start here-->
 	<div class="prod-info-main prod-wrap clearfix">
