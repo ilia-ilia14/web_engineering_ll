@@ -25,7 +25,7 @@ if(!isset($_SESSION))
 		<div class="row">
 				<div class="col-md-5 col-sm-12 col-xs-12">
 					<div class="product-image"> 
-						<img src="<?php echo $product['Image']; ?>" class="img-responsive"> 
+						<img src="<?php echo $products['Image']; ?>" class="img-responsive"> 
 						<span class="tag2 hot">
 							HOT
 						</span> 
@@ -35,7 +35,7 @@ if(!isset($_SESSION))
 				<div class="product-deatil">
 						<h5 class="name">
 							<a href="#">
-								<?php echo $product['Name']; ?>
+								<?php echo $products['Name']; ?>
 							</a>
 							<a href="#">
 								<span>	Computers</span>
@@ -43,17 +43,17 @@ if(!isset($_SESSION))
 
 						</h5>
 						<p class="price-container">
-							<span><?php echo "$". $product['Price']; ?></span>
+							<span><?php echo "$". $products['Price']; ?></span>
 						</p>
 						<span class="tag1"></span> 
 				</div>
 				<div class="description">
-					<p><?php echo $product['Description']; ?></p>
+					<p><?php echo $products['Description']; ?></p>
 				</div>
 				<div class="product-info smart-form">
 					<div class="row">
 						<div class="col-md-12"> 
-                            <a href="index.php?action=product&id=<?php echo $product['categoryID']; ?>"
+                            <a href="index.php?action=product&id=<?php echo $products['categoryID']; ?>"
 							class="btn btn-info">More info</a>
 						</div>
 						<div class="col-md-12">
