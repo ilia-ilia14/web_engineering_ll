@@ -12,7 +12,8 @@ if(!isset($_SESSION))
 $action = filter_input(INPUT_GET, 'action');  
 if ($action == NULL) {
     $products = getProducts();
-    include 'home.php';
+	var_dump($products);
+   // include 'home.php';
 
 }
 /*
