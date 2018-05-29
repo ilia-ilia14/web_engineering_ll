@@ -79,8 +79,8 @@ if(!isset($_SESSION))
   <th><?php echo $total; ?></th>
   </table>
   	
-	<a class="btn btn-primary" href="control.php?action=delete">Delete cart</a>
-	<a class="btn btn-primary" href="control.php?action=order&total=<?php echo $total; ?>">Place Order</a>
+	<a class="btn btn-primary" href="index.php?action=delete">Delete cart</a>
+	<a class="btn btn-primary" href="index.php?action=order&total=<?php echo $total; ?>">Place Order</a>
   <?php endif; ?>
 </div>
 
