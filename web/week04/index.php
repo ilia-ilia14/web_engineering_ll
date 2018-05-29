@@ -8,17 +8,12 @@ if(!isset($_SESSION))
         {  $_SESSION['Cart'] = array(); }
 	//require('model/model.php');
 }
-$action = filter_input(INPUT_POST, 'action');
-if($action == NULL)
-{
-$action = filter_input(INPUT_GET, 'action');
-}
-
+$action = filter_input(INPUT_GET, 'action');  
 if ($action == NULL) {
     $categories = get_categories();
     include 'home.php';
 
-}$action = filter_input(INPUT_GET, 'action');  
+}
 
 //cart start at the beggingin of the session
 
