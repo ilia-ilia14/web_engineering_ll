@@ -24,14 +24,7 @@ function getProducts()
               $statment = $db->prepare($query);
 			  $statment->execute();
 			  $products = $statment->fetchAll();
-			  /*
-              
-              $products = $statement->fetchAll();
-             // $statment->closeCursor();
-			 // $arr = $statement->errorInfo();
-			 // var_dump($arr);
-              //return $products;
-			  */
+              return $products;
 	/*		  
 $stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
