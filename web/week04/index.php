@@ -29,10 +29,13 @@ if($action == "add") {
 	$price = filter_input(INPUT_GET, 'price');
 	$picture = filter_input(INPUT_GET, 'picture');
 	$description =  filter_input(INPUT_GET, 'description');
+	$id = filter_input(INPUT_GET, 'id');
 	$product = array();
 	array_push($product, $picture, $name, $price);
 	$products = array($product);
 	$_SESSION['Cart'][] = $products;
+	
+	$product = getProduct($id);
 	include "product.php";
 }
 if($action == "goCart") {
