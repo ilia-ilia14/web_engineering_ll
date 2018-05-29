@@ -18,10 +18,12 @@ function getProduct($id)
 function getProducts()
 {
 	global $db;
-	var_dump($db);
-	/*
+
+	
 	$query = 'SELECT * FROM assignmentProducts';
               $statment = $db->prepare($query);
+			  	var_dump($db);
+			  /*
               $statment->execute();
               $products = $statement->fetchAll();
              // $statment->closeCursor();
