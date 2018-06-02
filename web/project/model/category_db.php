@@ -1,10 +1,10 @@
 <?php
 require 'database.php';
 
+
 function get_categories() {
     global $db;
-    $query = 'SELECT * FROM categories
-              ORDER BY categoryid';
+    $query = 'SELECT * FROM categories';
     $statement = $db->prepare($query);
     $statement->execute();
     $categories = $statement->fetchall();
