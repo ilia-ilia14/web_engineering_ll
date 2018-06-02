@@ -17,7 +17,7 @@ $count = 0;
           <?php foreach ($categories as $category) : ?>
             <li>
             <a href="<?php  echo $links[$count]; $count++;?>">
-                <?php echo $category['categoryName']; ?>
+                <?php echo $category['categoryname']; ?>
             </a>
             </li>
         <?php endforeach; ?>
