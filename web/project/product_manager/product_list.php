@@ -34,16 +34,16 @@
             </tr>
             <?php foreach ($products as $product) : ?>
             <tr>
-                <td><?php echo $product['productCode']; ?></td>
-                <td><?php echo $product['productName']; ?></td>
-                <td class="right"><?php echo $product['listPrice']; ?></td>
+                <td><?php echo $product['productcode']; ?></td>
+                <td><?php echo $product['productname']; ?></td>
+                <td class="right"><?php echo $product['listprice']; ?></td>
                 <td><form action="." method="post">
                     <input type="hidden" name="action"
                            value="delete_product">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
+                           value="<?php echo $product['productid']; ?>">
                     <input type="hidden" name="category_id"
-                           value="<?php echo $product['categoryID']; ?>">
+                           value="<?php echo $product['categoryid']; ?>">
                     <input type="submit" value="Delete">
                 </form></td>
                 
@@ -51,15 +51,15 @@
                     <input type="hidden" name="action"
                            value="show_edit_form">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
+                           value="<?php echo $product['productid']; ?>">
                     <input type="hidden" name="category_id"
-                           value="<?php echo $product['categoryID']; ?>">
+                           value="<?php echo $product['categoryid']; ?>">
                     <input type="hidden" name="name" 
-                           value="<?php echo $product['productName']; ?>">
+                           value="<?php echo $product['productname']; ?>">
                     <input type="hidden" name="code" 
-                           value="<?php echo $product['productCode']; ?>">
+                           value="<?php echo $product['productcode']; ?>">
                     <input type="hidden" name="price" 
-                           value="<?php echo $product['listPrice']; ?>">
+                           value="<?php echo $product['listprice']; ?>">
 
                     <input type="submit" value="Edit">
                 </form>

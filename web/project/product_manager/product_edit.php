@@ -24,8 +24,8 @@
         <label>Category:</label>
         <select name="category_id">
         <?php foreach ($categories as $category ) : ?>
-            <option value="<?php echo $category['categoryID']; ?>">
-                <?php echo $category['categoryName']; ?>
+            <option value="<?php echo $category['categoryid']; ?>">
+                <?php echo $category['categoryname']; ?>
             </option>
         <?php endforeach; ?>
         </select>
