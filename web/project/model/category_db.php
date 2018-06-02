@@ -9,8 +9,6 @@ function get_categories() {
     $statement = $db->prepare($query);
     $statement->execute();
     $categories = $statement->fetchall();
-	var_dump($categories);
-	break;
     return $categories;    
 }
 

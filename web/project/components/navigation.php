@@ -16,7 +16,7 @@ if(isset($_SESSION['loggedin']))
 		  <span class="caret"></span></a>
 		  <ul class="dropdown-menu">
 		  <?php foreach($_SESSION['categories'] as $category) {  ?>
-			<li> <a href="index.php?action=products&categoryID=<?php echo $category['categoryID']; ?>" > <?php echo $category['categoryName']; ?></a></li>
+			<li> <a href="index.php?action=products&categoryID=<?php echo $category['categoryid']; ?>" > <?php echo $category['categoryname']; ?></a></li>
 			<?php } ?>
 		  </ul>
 		</li>
