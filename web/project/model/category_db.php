@@ -2,7 +2,7 @@
 function get_categories() {
     global $db;
     $query = 'SELECT * FROM categories
-              ORDER BY categoryID';
+              ORDER BY categoryid';
     $statement = $db->prepare($query);
     $statement->execute();
     $categories = $statement->fetchall();
