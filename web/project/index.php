@@ -31,16 +31,12 @@ switch($action){
         $password = filter_input(INPUT_POST, 'password');
         $password1 = filter_input(INPUT_POST, 'password1');
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-        $phone = "2082585868";
-        $DIGIT = strlen($phone); 
         $PASS =  strlen($password);
 
 
         $error = array();
         if($firstname == NULL || $lastname == NULL)
             { $error[] = "Invalid First/Last Name"; }
-        if(($DIGIT < 10) || ($DIGIT > 10))
-            { $error[] = "Invalid Phone Number"; }
         //echo $error;
         //exit();
         if(!$email)
