@@ -4,8 +4,8 @@ require 'database.php';
 
 function add_member($firstname, $lastname, $email, $password, $phone) {
     global $db;
-    $query = 'INSERT INTO member (firstName, lastName, Email, Password, Phone)
-              VALUES (:firstName, :lastName, :Email, :Password, :Phone)';
+    $query = 'INSERT INTO member (firstName, lastName, Email, Password)
+              VALUES (:firstName, :lastName, :Email, :Password)';
 
 
 
@@ -14,7 +14,6 @@ function add_member($firstname, $lastname, $email, $password, $phone) {
     $statement->bindValue(':lastName', $lastname);
     $statement->bindValue(':Email', $email);
     $statement->bindValue(':Password', $password);
-    $statement->bindValue(':Phone', $phone);
 
     $statement->execute();
     $newID = $db->lastInsertId();
@@ -58,13 +57,12 @@ function edit_member($firstname, $lastname, $email, $phone, $hashedPassword, $me
 {
   global $db;
     $query = 'UPDATE member 
-              SET firstName=:firstname, lastName =:lastname, Email=:email, Phone=:phone, Password=:hashedPassword WHERE 
+              SET firstName=:firstname, lastName =:lastname, Email=:email, Password=:hashedPassword WHERE 
               memberID=:member_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':firstname', $firstname);
     $statement->bindValue(':lastname', $lastname);
     $statement->bindValue(':email', $email);
-    $statement->bindValue(':phone', $phone);
     $statement->bindValue('hashedPassword', $hashedPassword);
     $statement->bindValue('member_id', $member_id);
     $statement->execute();
