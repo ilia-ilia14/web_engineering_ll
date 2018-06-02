@@ -86,18 +86,18 @@ switch($action){
 
         $potentialUser = getUserByEmail($email);
         //see if password's match if so login
-        $passwordMatch = password_verify($password, $potentialUser['Password']);
+        $passwordMatch = password_verify($password, $potentialUser['password']);
         if($passwordMatch)
         //if($password == $potentialUser['Password'])
         {
          $_SESSION['loggedin'] = TRUE;
-         $_SESSION['firstname'] = $potentialUser['firstName'];
-         $_SESSION['lastname'] = $potentialUser['lastName'];
-         $_SESSION['status'] = $potentialUser['Status'];
-         $_SESSION['email'] = $potentialUser['Email'];
+         $_SESSION['firstname'] = $potentialUser['firstname'];
+         $_SESSION['lastname'] = $potentialUser['lastname'];
+         $_SESSION['status'] = $potentialUser['status'];
+         $_SESSION['email'] = $potentialUser['email'];
         	
          $lifetime = 60 *60 *24 * 24;
-         setcookie('3361name', $potentialUser['firstName'], $lifetime);
+         setcookie('3361name', $potentialUser['firstname'], $lifetime);
          $categories = get_categories();
 
          include 'home.php';
