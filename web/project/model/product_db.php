@@ -1,4 +1,6 @@
 <?php
+require 'database.php';
+
 function get_products_by_category($category_id) {
     global $db;
     $query = 'SELECT * FROM product

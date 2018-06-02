@@ -1,4 +1,6 @@
 <?php
+require 'database.php';
+
 function get_categories() {
     global $db;
     $query = 'SELECT * FROM categories
