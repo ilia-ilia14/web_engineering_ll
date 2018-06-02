@@ -4,10 +4,13 @@ require 'database.php';
 
 function get_categories() {
     global $db;
-    $query = 'SELECT * FROM categories';
+    $query = 'SELECT * FROM categories
+              ORDER BY categoryID';
     $statement = $db->prepare($query);
     $statement->execute();
     $categories = $statement->fetchall();
+	var_dump($categories);
+	break;
     return $categories;    
 }
 
