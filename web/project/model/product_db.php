@@ -113,13 +113,12 @@ function upload_file($file) {
     $image_dir_path = getcwd() . DIRECTORY_SEPARATOR . 'images';
     //fullpath allows file to be stored in the computer folder
     $fullPath = $image_dir_path . DIRECTORY_SEPARATOR . $filename;
-	echo $fullPath;
-	/*
+	
     //$imagePath is for server because it doesn't need for path page is already in the product Manager
     $imagePath = 'images' . DIRECTORY_SEPARATOR . $filename;
 
     //this function resizes and uploads pictures to the library
-    resize_image($source, $fullPath, "180", "200");
+    //resize_image($source, $fullPath, "180", "200");
 
     //SAVE UPLODED PICTURE
     //move_uploaded_file($source, $fullPath);
