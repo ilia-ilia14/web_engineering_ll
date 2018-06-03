@@ -116,7 +116,7 @@ function upload_file($file) {
     $imagePath = 'images' . DIRECTORY_SEPARATOR . $filename;
 
     //this function resizes and uploads pictures to the library
-    //resize_image($source, $fullPath, "180", "200");
+    resize_image($source, $fullPath, "180", "200");
 
     //SAVE UPLODED PICTURE
     //move_uploaded_file($source, $fullPath);
