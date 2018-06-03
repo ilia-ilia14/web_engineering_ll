@@ -56,7 +56,7 @@ if(!isset($_SESSION))
 				<div class="product-info smart-form">
 					<div class="row">
 						<div class="col-md-12"> 
-                            <a href="index.php?action=viewProduct&id=<?php echo $product['productID']; ?>"
+                            <a href="index.php?action=viewProduct&id=<?php echo $product['productid']; ?>"
 							class="btn btn-info">More info</a>
 						</div>
 						<div class="col-md-12">
