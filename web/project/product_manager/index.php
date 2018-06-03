@@ -67,10 +67,10 @@ switch ($action) {
         $price = filter_input(INPUT_POST, 'price');
         $product_info  = filter_input(INPUT_POST, 'product_info');
         $image = filter_input(INPUT_POST, 'image');
-		
-		echo $image ." ". $product_info ." ". $name ." ". $code;
+		$imagePath = upload_file('file');
+		echo $imagePath;
         //file upload function
-       // $imagePath = upload_file('file');
+       // 
         //
 /*
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
