@@ -27,7 +27,7 @@ if(!isset($_SESSION))
 		<div class="row">
 				<div class="col-md-5 col-sm-12 col-xs-12">
 					<div class="product-image"> 
-						<img src="<?php echo $product['Image']; ?>" class="img-responsive"> 
+						<img src="<?php echo $product['image']; ?>" class="img-responsive"> 
 						<span class="tag2 hot">
 							HOT
 						</span> 
@@ -37,20 +37,20 @@ if(!isset($_SESSION))
 				<div class="product-deatil">
 						<h5 class="name">
 							<a href="#">
-								<?php echo $product['productName']; ?>
+								<?php echo $product['productname']; ?>
 							</a>
 							<a href="#">
-								<span>Product code #<?php echo $product['productCode']; ?></span>
+								<span>Product code #<?php echo $product['productcode']; ?></span>
 							</a>                            
 
 						</h5>
 						<p class="price-container">
-							<span><?php echo "$". $product['listPrice']; ?></span>
+							<span><?php echo "$". $product['listprice']; ?></span>
 						</p>
 						<span class="tag1"></span> 
 				</div>
 				<div class="description">
-					<p> <?php echo substr($product['productInfo'], 0, 50); 
+					<p> <?php echo substr($product['productinfo'], 0, 50); 
 					?></p>
 				</div>
 				<div class="product-info smart-form">
