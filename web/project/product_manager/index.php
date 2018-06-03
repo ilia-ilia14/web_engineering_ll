@@ -60,8 +60,6 @@ switch ($action) {
     //////
     case 'add_product':
     /////
-	echo "here";
-	/*
         $category_id = filter_input(INPUT_POST, 'category_id', 
                 FILTER_VALIDATE_INT);
         $code = filter_input(INPUT_POST, 'code');
@@ -69,10 +67,12 @@ switch ($action) {
         $price = filter_input(INPUT_POST, 'price');
         $product_info  = filter_input(INPUT_POST, 'product_info');
         $image = filter_input(INPUT_POST, 'image');
+		
+		echo $image ." ". $product_info ." ". $name ." ". $code;
         //file upload function
-        $imagePath = upload_file('file');
-        //echo $image ." ". $product_info ." ". $name ." ". $code ." ".  $imagePath;
-
+       // $imagePath = upload_file('file');
+        //
+/*
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
                 $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $imagePath == NULL  ) {
             $error = "Invalid product data. Check all fields and try again.";
