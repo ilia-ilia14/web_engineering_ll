@@ -69,8 +69,6 @@ switch ($action) {
         $image = filter_input(INPUT_POST, 'image');
         //file upload function
         $imagePath = upload_file('file');
-
-
         echo $image ." ". $product_info ." ". $name ." ". $code ." ".  $imagePath;
 /*
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
@@ -83,7 +81,6 @@ switch ($action) {
              echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
            $newItem = add_product($category_id, $code, $name, $price, $product_info, $imagePath);
             header('Location: .?action=list_products');
-			*/
         }
 		*/
     break;
