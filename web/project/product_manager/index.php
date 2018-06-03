@@ -71,7 +71,7 @@ switch ($action) {
         //file upload function
        // 
         //
-/*
+
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
                 $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $imagePath == NULL  ) {
             $error = "Invalid product data. Check all fields and try again.";
@@ -83,7 +83,6 @@ switch ($action) {
            $newItem = add_product($category_id, $code, $name, $price, $product_info, $imagePath);
             header('Location: .?action=list_products');
         }
-		*/
     break;
     //////
     case 'delete_product':
