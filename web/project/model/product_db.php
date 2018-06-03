@@ -117,7 +117,8 @@ function upload_file($file) {
 
     //this function resizes and uploads pictures to the library
     //resize_image($source, $fullPath, "180", "200");
-
+	echo $fullPath;
+	break;
     //SAVE UPLODED PICTURE
     move_uploaded_file($source, $fullPath);
     //echo $target;
