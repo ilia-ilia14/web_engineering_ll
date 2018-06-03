@@ -1,6 +1,4 @@
 <?php
-require 'database.php';
-
 function get_products_by_category($category_id) {
     global $db;
     $query = 'SELECT * FROM product
@@ -116,11 +114,10 @@ function upload_file($file) {
     $imagePath = 'images' . DIRECTORY_SEPARATOR . $filename;
 
     //this function resizes and uploads pictures to the library
-    //resize_image($source, $fullPath, "180", "200");
-	echo $fullPath;
-	break;
+    resize_image($source, $fullPath, "180", "200");
+
     //SAVE UPLODED PICTURE
-    move_uploaded_file($source, $fullPath);
+    //move_uploaded_file($source, $fullPath);
     //echo $target;
     return $imagePath;
 }

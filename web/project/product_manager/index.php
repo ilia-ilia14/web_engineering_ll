@@ -67,10 +67,11 @@ switch ($action) {
         $price = filter_input(INPUT_POST, 'price');
         $product_info  = filter_input(INPUT_POST, 'product_info');
         $image = filter_input(INPUT_POST, 'image');
-		$imagePath = upload_file('file');
         //file upload function
-       // 
-        //
+        $imagePath = "product_manager/". upload_file('file');
+
+
+        
 
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
                 $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $imagePath == NULL  ) {
