@@ -66,7 +66,7 @@ switch ($action) {
         $name = filter_input(INPUT_POST, 'name');
         $price = filter_input(INPUT_POST, 'price');
         $product_info  = filter_input(INPUT_POST, 'product_info');
-        $image = filter_input(INPUT_POST, 'image');
+        $image = filter_input(INPUT_POST, 'file');
 		//$imagePath = upload_file('file');
 		echo $image;
         //file upload function
