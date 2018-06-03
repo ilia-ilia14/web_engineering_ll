@@ -72,7 +72,6 @@ switch ($action) {
 
 
         echo $image ." ". $product_info ." ". $name ." ". $code ." ".  $imagePath;
-		break;
 /*
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
                 $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $imagePath == NULL  ) {
@@ -86,6 +85,7 @@ switch ($action) {
             header('Location: .?action=list_products');
 			*/
         }
+		*/
     break;
     //////
     case 'delete_product':
