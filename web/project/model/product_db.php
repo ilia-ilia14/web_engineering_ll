@@ -108,12 +108,13 @@ function upload_file($file) {
 
     $filename = $_FILES[$file]['name'];
     $source = $_FILES[$file]['tmp_name'];
-	echo $filename;
-	/*
+	
+	
     $image_dir_path = getcwd() . DIRECTORY_SEPARATOR . 'images';
     //fullpath allows file to be stored in the computer folder
     $fullPath = $image_dir_path . DIRECTORY_SEPARATOR . $filename;
-
+	echo $fullPath;
+	/*
     //$imagePath is for server because it doesn't need for path page is already in the product Manager
     $imagePath = 'images' . DIRECTORY_SEPARATOR . $filename;
 
