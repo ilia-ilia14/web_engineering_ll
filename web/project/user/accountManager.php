@@ -51,18 +51,18 @@ if(!isset($_SESSION))
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			                <input type="text" name="firstname" id="name1"  class="form-control input-sm" value="<?php echo $member['firstName']; ?>" />
+			                <input type="text" name="firstname" id="name1"  class="form-control input-sm" value="<?php echo $member['firstname']; ?>" />
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<input type="text" id="name1" name="lastname"  class="form-control input-sm" value="<?php echo $member['lastName']; ?>" required />
+			    						<input type="text" id="name1" name="lastname"  class="form-control input-sm" value="<?php echo $member['lastname']; ?>" required />
 			    					</div>
 			    				</div>
 			    			</div>
 
 			    			<div class="form-group">
-			    				<input type="text" id="email" name="email"  class="form-control input-sm" value="<?php echo $member['Email']; ?>" required />
+			    				<input type="text" id="email" name="email"  class="form-control input-sm" value="<?php echo $member['email']; ?>" required />
 			    			</div>
 
 			    			<div class="row">
