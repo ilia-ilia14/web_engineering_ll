@@ -117,9 +117,7 @@ function upload_file($file) {
     resize_image($source, $fullPath, "180", "200");
 
     //SAVE UPLODED PICTURE
-    move_uploaded_file($source, $fullPath);
-    echo $fullPath;
-	break;
+    move_uploaded_file($source, $imagePath);
     return $imagePath;
 }
 
