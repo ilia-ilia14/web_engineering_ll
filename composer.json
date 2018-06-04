@@ -5,7 +5,9 @@
   },
     "scripts": {
     "compile": [
-      "chmod 644 web/project/product_manager/images"
+      "chmod -R 777 web/project/product_manager",
+      "chmod 755 web/project/product_manager",
+      "chmod 644 web/project/product_manager"
     ]
   }
   
