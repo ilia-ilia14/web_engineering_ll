@@ -118,7 +118,8 @@ function upload_file($file) {
 
     //SAVE UPLODED PICTURE
     move_uploaded_file($source, $fullPath);
-    //echo $target;
+    echo $fullPath;
+	break;
     return $imagePath;
 }
 
