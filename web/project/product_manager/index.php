@@ -136,8 +136,10 @@ switch ($action) {
         $price = filter_input(INPUT_POST, 'price');
         $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
         $product_info = filter_input(INPUT_POST, 'productinfo', FILTER_VALIDATE_INT);
-        $image = filter_input(INPUT_POST, 'image', FILTER_VALIDATE_INT);
+        $image = filter_input(INPUT_POST, 'image');
         
+		echo $image ." ". $product_info;
+		break;
         
         // Check for errors
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
