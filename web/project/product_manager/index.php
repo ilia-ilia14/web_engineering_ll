@@ -144,7 +144,7 @@ switch ($action) {
                 $name == NULL || $price == NULL || $price == FALSE) {
             $error = "Invalid product data. Check all fields and try again.";
             // display the result
-            include('../errors/error.php');
+            include('product_edit.php');
         } else { 
             edit_product($category_id, $code, $name, $price, $product_id, $product_info, $image);//get the function
             header("Location: .?category_id=$category_id");

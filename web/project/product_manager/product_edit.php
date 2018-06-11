@@ -16,7 +16,12 @@
     }
 </style>
 <main>
-    
+						<b style="color:red;"> 
+							<?php  if(!empty($error)) {
+							foreach ( $error as $err ) : ?>
+						   <?php echo $err."<br>"; ?>
+							<?php endforeach; }?>
+						</b>
     <form action="index.php" method="post" id="edit_product_form">
         <input type="hidden" name="action" value="save_product">
         <br>
@@ -42,13 +47,10 @@
         <label>List Price:</label>
         <input type="text" name="price" value="<?php echo $price; ?>">
         <br>
-        <textarea rows="4" cols="50"  type="text" name="productinfo" ><?php echo $product['productInfo']; ?></textarea>
+        <textarea rows="4" cols="50"  type="text" name="productinfo" ><?php echo $product['productinfo']; ?></textarea>
         <br><br>
-        <span >Please don't touch the link unless you want to change the product pricture </span><br>
-        <input type="text" name="image" value="<?php echo $product['Image']; ?>" >
-        <br>
-        <span>Or chose a new image </span><br>
-        <input type="file" name="newimage" >
+        <span >New Image Url </span><br>
+        <input type="text" name="image" value="<?php echo $product['image']; ?>" >
         <br>
         <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" >
         <label>&nbsp;</label>
