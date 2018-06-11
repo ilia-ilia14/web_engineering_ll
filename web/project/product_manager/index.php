@@ -135,7 +135,7 @@ switch ($action) {
         $name = filter_input(INPUT_POST, 'name');
         $price = filter_input(INPUT_POST, 'price');
         $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
-        $product_info = filter_input(INPUT_POST, 'productinfo', FILTER_VALIDATE_INT);
+        $product_info = filter_input(INPUT_POST, 'productinfo');
         $image = filter_input(INPUT_POST, 'image');
         
 		echo $image ."     <br/>". $product_info;
