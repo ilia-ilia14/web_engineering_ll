@@ -80,7 +80,7 @@ switch ($action) {
             echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
 
         } else { 
-             echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
+           //  echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
            $newItem = add_product($category_id, $code, $name, $price, $product_info, $image);
             header('Location: .?action=list_products');
         }
