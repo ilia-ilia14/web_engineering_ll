@@ -68,20 +68,20 @@ switch ($action) {
         $product_info  = filter_input(INPUT_POST, 'product_info');
         $image = filter_input(INPUT_POST, 'image');
         //file upload function
-        $imagePath = "product_manager/". upload_file('file');
+       // $imagePath = "product_manager/". upload_file('file');
 
 
         
 
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
-                $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $imagePath == NULL  ) {
+                $name == NULL || $price == NULL || $price == FALSE || $product_info == NULL || $image == NULL  ) {
             $error = "Invalid product data. Check all fields and try again.";
             echo "error something is wrong <br />";
             echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
 
         } else { 
              echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
-           $newItem = add_product($category_id, $code, $name, $price, $product_info, $imagePath);
+           $newItem = add_product($category_id, $code, $name, $price, $product_info, $image);
             header('Location: .?action=list_products');
         }
     break;

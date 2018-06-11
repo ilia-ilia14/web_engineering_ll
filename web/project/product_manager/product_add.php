@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['add_product']))
 {
-    echo 'here';
     exit();
     $image_dir = 'images';
     $image_dir_path = getcwd() . DIRECTORY_SEPARATOR . $image_dir;
@@ -65,7 +64,8 @@ if(isset($_POST['add_product']))
         <input type="text" name="price" required />
         <br>
 
-        <input type="file" name="file" required />
+		<label>Picture Url</label>
+        <input type="text" name="image" required />
         <br />
 
 

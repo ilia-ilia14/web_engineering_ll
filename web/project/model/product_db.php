@@ -122,19 +122,19 @@ function upload_file($file) {
 }
 
 
-function add_product($category_id, $code, $name, $price, $product_info, $imagePath) {
+function add_product($category_id, $code, $name, $price, $product_info, $image) {
     global $db;
     $query = 'INSERT INTO product
                  (categoryID, productCode, productName, listPrice, productInfo, Image)
               VALUES
-                 (:category_id, :code, :name, :price, :product_info, :imagePath)';
+                 (:category_id, :code, :name, :price, :product_info, :image)';
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':code', $code);
     $statement->bindValue(':name', $name);
     $statement->bindValue(':price', $price);
     $statement->bindValue(':product_info', $product_info);
-    $statement->bindValue(':imagePath', $imagePath);
+    $statement->bindValue(':image', $image);
     $statement->execute();
     $newItem = $statement->rowCount();
     $statement->closeCursor();
