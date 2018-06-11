@@ -138,7 +138,7 @@ switch ($action) {
         $product_info = filter_input(INPUT_POST, 'productinfo', FILTER_VALIDATE_INT);
         $image = filter_input(INPUT_POST, 'image');
         
-		echo $image ." ". $product_info;
+		echo $image ."     <br/>". $product_info;
 		break;
         
         // Check for errors
