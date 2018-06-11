@@ -137,9 +137,7 @@ switch ($action) {
         $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
         $product_info = filter_input(INPUT_POST, 'productinfo');
         $image = filter_input(INPUT_POST, 'image');
-        
-		echo $image ."     <br/>". $product_info;
-		break;
+
         
         // Check for errors
         if ($category_id == NULL || $category_id == FALSE || $code == NULL || 
