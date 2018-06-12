@@ -22,6 +22,6 @@ productCode VARCHAR(10),
 productName 	varchar(225),
 listPrice integer,
 productInfo VARCHAR(1500),
-Image VARCHAR(300)
+Image VARCHAR(1000)
 );
 

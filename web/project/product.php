@@ -41,7 +41,7 @@ if(!isset($_SESSION))
         
                     <!-- Botones de compra -->
                     <div class="section" style="padding-bottom:20px;">				
-                        <a onclick="add()" href="index.php?action=addToCart&product_id=<?php echo $product['productID']; ?>" 
+                        <a onclick="add()" href="index.php?action=addToCart&product_id=<?php echo $product['productid']; ?>" 
 						class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a>
                         <h6><a href="#" >
 						<span class="glyphicon glyphicon-heart-empty" style="cursor:pointer;">
