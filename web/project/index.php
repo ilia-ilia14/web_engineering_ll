@@ -132,7 +132,8 @@ switch($action){
             $member = getUserByEmail($memberEmail);
             include 'user/accountManager.php';
         }else { $hashedPassword = password_hash($password, PASSWORD_DEFAULT); 
-            
+              echo  "id= ". $member_id;
+  break;
                 edit_member($firstname, $lastname, $email, $hashedPassword, $member_id);
                 session_destroy();
                 $categories = get_categories();
