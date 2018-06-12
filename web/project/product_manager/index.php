@@ -67,7 +67,7 @@ switch ($action) {
         $price = filter_input(INPUT_POST, 'price');
         $product_info  = filter_input(INPUT_POST, 'product_info');
         $image = filter_input(INPUT_POST, 'image');
-	echo $category_id ." ". $code ." ".$name ." ". $price ." ". $product_info ." ".$image
+	echo $category_id ." ". $code ." ".$name ." ". $price ." ". $product_info ." ".$image;
  break;
         
 
