@@ -51,6 +51,7 @@ if(!isset($_SESSION))
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
+							<input type="hidden" name="member_id" id="name1"  class="form-control input-sm" value="<?php echo $member['memberid']; ?>" />
 			                <input type="text" name="firstname" id="name1"  class="form-control input-sm" value="<?php echo $member['firstname']; ?>" />
 			    					</div>
 			    				</div>
