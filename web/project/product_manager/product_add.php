@@ -1,19 +1,3 @@
-<?php
-if(isset($_POST['add_product']))
-{
-    exit();
-    $image_dir = 'images';
-    $image_dir_path = getcwd() . DIRECTORY_SEPARATOR . $image_dir;
-     $filename = $_FILES[$file]['name'];
-        if (empty($filename)) {
-            echo "it is empty";
-            return;
-        }
-        $source = $_FILES[$file]['tmp_name'];
-        $target = $image_dir_path . DIRECTORY_SEPARATOR . $filename;
-        move_uploaded_file($source, $target);
-}
-?>
 <DOCTYPE html>
 <html>
 <head>
