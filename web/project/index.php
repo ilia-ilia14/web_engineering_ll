@@ -112,7 +112,6 @@ switch($action){
         $password = filter_input(INPUT_POST, 'password');
         $password1 = filter_input(INPUT_POST, 'password1');
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-        $phone = filter_input(INPUT_POST, 'phone');
         $member_id = filter_input(INPUT_POST, 'member_id');
 
         $error = "";
@@ -134,9 +133,7 @@ switch($action){
             include 'user/accountManager.php';
         }else { $hashedPassword = password_hash($password, PASSWORD_DEFAULT); 
             
-
-                echo "password matched!!"; 
-                edit_member($firstname, $lastname, $email, $phone, $hashedPassword, $member_id);
+                edit_member($firstname, $lastname, $email, $hashedPassword, $member_id);
                 session_destroy();
                 $categories = get_categories();
                 $_SESSION['loggedin'] = FALSE;

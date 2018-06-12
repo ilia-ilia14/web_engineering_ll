@@ -53,9 +53,11 @@ function getUserByEmail($email)
               
 }
 
-function edit_member($firstname, $lastname, $email, $phone, $hashedPassword, $member_id)
+function edit_member($firstname, $lastname, $email, $hashedPassword, $member_id)
 {
   global $db;
+  echo $firstname ." ". $lastname ." ". $email ." ". $hashedPassword ." ". $member_id;
+  break;
     $query = 'UPDATE member 
               SET firstName=:firstname, lastName =:lastname, Email=:email, Password=:hashedPassword WHERE 
               memberID=:member_id';
