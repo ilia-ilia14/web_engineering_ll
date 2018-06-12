@@ -78,8 +78,8 @@ switch ($action) {
         } else { 
            //  echo $code. ", ".$name. ", ". $price. ", ". $product_info.",-". $image;
            $newItem = add_product($category_id, $code, $name, $price, $product_info, $image);
-           // header('Location: .?action=list_products');
-		   include("../index.php");
+           header('Location: .. /index.php');
+		  // include(".. /index.php");
         }
     break;
     //////
